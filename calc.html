@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <title>Greenline</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css?_v=20240226113744">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20240226113744"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240226113744" />
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+    <div class="header__container container">
+        <div class="header__body">
+            <a href="#" class="header__logo">
+                <img src="img/logo.svg" alt="Logo">
+            </a>
+            <div class="header__menu menu" data-desk="phone, after">
+                <nav class="menu__body" data-mob="lang, append">
+                    <ul class="menu__list" data-mob="phone, after">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Про нас</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Послуги</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Калькулятор</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <a href="#" class="header__phone" data-desk="lang, after" data-move="phone, 480">
+                <svg>
+                    <use href="img/icons/icons.svg#phone"></use>
+                </svg>
+                +38 044 391 17 07
+            </a>            
+            <div class="header__lang lang" data-move="lang, 768">
+                <button type="button" class="lang__btn active">Укр</button>
+                <button type="button" class="lang__btn">Ру</button>
+            </div>
+            <button type="button" class="header__menu-icon">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+        <div class="page">
+
+            <div class="intro intro_reverse intro_gray">
+                <div class="intro__container container">
+                    <div class="intro__body">
+                        <div class="intro__info">
+                            <h2 class="intro__title h2">
+                                Lorem Ipsum
+                            </h2>
+                            <p class="intro__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                mollit anim id est laborum.
+                            </p>
+                            <button type="button" class="intro__btn btn-green" data-modal="form">
+                                Замовити консультацію
+                                <span>
+                                    <svg>
+                                        <use href="img/icons/icons.svg#arrow"></use>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="intro__image lazy">
+                            <picture>
+                                <source data-srcset="img/intro/image.webp" srcset="img/plug.png" type="image/webp">
+                                <img data-src="img/intro/image.jpg" src="img/plug.png" alt="Image">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="calc">
+                <div class="calc__container container">
+                    <div class="calc__body">
+                        <div class="calc__info">
+                            <h2 class="calc__title h2">Kалькулятор доходу СЕС</h2>
+                            <div class="calc__text">
+                                <p>
+                                    При розрахунку річної виручки застосований діючий у 2022 році тариф для наземної
+                                    промислової СЕС потужністю до 1 МВт.
+                                </p>
+                                <p>
+                                    Генерація розрахована з урахуванням розташування СЕС у центральному регіоні України.
+                                    Як середнє зважене значення. Крайні південні регіони України можуть давати генерацію
+                                    більше на 6-8%. Крайні північні на 8-10% менше.
+                                </p>
+                            </div>
+                            <button type="button" class="calc__btn btn-light" data-modal="form">
+                                Замовити консультацію
+                                <span>
+                                    <svg>
+                                        <use href="img/icons/icons.svg#arrow"></use>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="calc__form form-calc">
+                            <div class="form-calc__body">
+                                <ul class="form-calc__list">
+                                    <li class="form-calc__item">
+                                        Сума інвестиції, € <span>50 000</span>
+                                        <div class="form-calc__range range-single">
+                                            <input type="range" min="50000" max="500000" step="5000" value="50000">
+                                            <div class="range-single__slider">
+                                                <div class="range-single__thumb"></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="form-calc__item">
+                                        Потужність станції <span>74.63 кВт</span>
+                                    </li>
+                                    <li class="form-calc__item">
+                                        Обсяг річної генерації <span>88 805.97 кВт·год</span>
+                                    </li>
+                                    <li class="form-calc__item">
+                                        Термін окупності <span>близько 5 років</span>
+                                    </li>
+                                    <li class="form-calc__item">
+                                        Виручка з ПДВ <span>10 901.82 €/рік</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="calc calc_invert">
+                <div class="calc__container container">
+                    <div class="calc__body">
+                        <div class="calc__info">
+                            <h2 class="calc__title h2">Kалькулятор доходу СЕС</h2>
+                            <div class="calc__text">
+                                <p>
+                                    При розрахунку річної виручки застосований діючий у 2022 році тариф для наземної
+                                    промислової СЕС потужністю до 1 МВт.
+                                </p>
+                                <p>
+                                    Генерація розрахована з урахуванням розташування СЕС у центральному регіоні України.
+                                    Як середнє зважене значення. Крайні південні регіони України можуть давати генерацію
+                                    більше на 6-8%. Крайні північні на 8-10% менше.
+                                </p>
+                            </div>
+                            <button type="button" class="calc__btn btn-green" data-modal="form">
+                                Замовити консультацію
+                                <span>
+                                    <svg>
+                                        <use href="img/icons/icons.svg#arrow"></use>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="calc__form form-calc">
+                            <div class="form-calc__body">
+                                <ul class="form-calc__list">
+                                    <li class="form-calc__item">
+                                        Сума інвестиції, € <span>50 000</span>
+                                        <div class="form-calc__range range-single">
+                                            <input type="range" min="50000" max="500000" step="5000" value="50000">
+                                            <div class="range-single__slider">
+                                                <div class="range-single__thumb"></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="form-calc__item">
+                                        Потужність станції <span>74.63 кВт</span>
+                                    </li>
+                                    <li class="form-calc__item">
+                                        Обсяг річної генерації <span>88 805.97 кВт·год</span>
+                                    </li>
+                                    <li class="form-calc__item">
+                                        Термін окупності <span>близько 5 років</span>
+                                    </li>
+                                    <li class="form-calc__item">
+                                        Виручка з ПДВ <span>10 901.82 €/рік</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="offer offer_img">
+                <div class="offer__container container">
+                    <div class="offer__body">
+                        <div class="offer__info">
+                            <h2 class="offer__title h2">Зацікавлені в економії на електроенергії?</h2>
+                            <p class="offer__text">
+                                Зв'яжіться з нами вже сьогодні, щоб розпочати свій шлях до чистої та вигідної
+                                сонячної енергії.
+                            </p>
+                            <button type="button" class="offer__btn btn-light" data-modal="form">
+                                Замовити консультацію
+                                <span>
+                                    <svg>
+                                        <use href="img/icons/icons.svg#arrow"></use>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="offer__graph">
+                            <div class="offer__image lazy">
+                                <picture>
+                                    <source data-srcset="img/offer/image1.webp" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/offer/image1.jpg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="footer">
+    <div class="footer__container container">
+        <div class="footer__body">
+            <a href="#" class="footer__logo">
+                <img src="img/logo.svg" alt="Logo">
+            </a>
+            <p class="footer__rights">
+                © 2023. GreenLine Energy
+            </p>
+            <div class="footer__dev">
+                Розробка сайту
+                <img src="img/odesseo_logo.svg" alt="Logo">
+            </div>
+        </div>
+    </div>
+</footer>
+    </div>
+
+    <div class="modal" id="form">
+    <div class="modal__wrapper">
+        <div class="modal__content">
+            <form action="#" class="modal__form form">
+                <h2 class="form__title">Contact Form</h2>
+                <p class="form__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.
+                </p>
+                <div class="form__block">
+                    <div class="form__input input input-100">
+                        <div class="input__label">Им’я <span>*</span></div>
+                        <input type="text" placeholder="Им’я" name="name">
+                    </div>
+                    <div class="form__input input input-50">
+                        <div class="input__label">Email <span>*</span></div>
+                        <input type="text" placeholder="example@gmail.com" name="email">
+                    </div>
+                    <div class="form__input input input-50">
+                        <div class="input__label">Телефон <span>*</span></div>
+                        <input type="text" placeholder="+380 (00) 000 00 00" name="phone">
+                    </div>
+                    <div class="form__input input input-100">
+                        <div class="input__label">Коментар</div>
+                        <textarea placeholder="Коментар (необов’язково)" name="comment"></textarea>
+                    </div>
+                </div>
+                <div class="form__checkbox checkbox">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <input type="checkbox" name="name" value="value">
+                </div>
+                <button class="form__submit btn-green" data-modal="thanks">
+                    Відправити
+                    <span>
+                        <svg>
+                            <use href="img/icons/icons.svg#arrow"></use>
+                        </svg>
+                    </span>
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="thanks">
+    <div class="modal__wrapper">
+        <div class="modal__content">
+            <div class="modal__thanks thanks">
+                <h2 class="thanks__title">Thank you!</h2>
+                <p class="thanks__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                </p>
+                <a href="/" class="thanks__btn btn-green">
+                    Back to homepage
+                    <span>
+                        <svg>
+                            <use href="img/icons/icons.svg#arrow"></use>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="js/app.min.js?_v=20240226113744"></script>
+</body>
+
+</html>

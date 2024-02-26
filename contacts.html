@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <title>Greenline</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css?_v=20240226113744">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20240226113744"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240226113744" />
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+    <div class="header__container container">
+        <div class="header__body">
+            <a href="#" class="header__logo">
+                <img src="img/logo.svg" alt="Logo">
+            </a>
+            <div class="header__menu menu" data-desk="phone, after">
+                <nav class="menu__body" data-mob="lang, append">
+                    <ul class="menu__list" data-mob="phone, after">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Про нас</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Послуги</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Калькулятор</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <a href="#" class="header__phone" data-desk="lang, after" data-move="phone, 480">
+                <svg>
+                    <use href="img/icons/icons.svg#phone"></use>
+                </svg>
+                +38 044 391 17 07
+            </a>            
+            <div class="header__lang lang" data-move="lang, 768">
+                <button type="button" class="lang__btn active">Укр</button>
+                <button type="button" class="lang__btn">Ру</button>
+            </div>
+            <button type="button" class="header__menu-icon">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+        <div class="page">
+
+            <div class="contacts">
+                <div class="contacts__container container">
+                    <div class="contacts__body">
+                        <div class="contacts__info">
+                            <div class="contacts__pre-title">Contact</div>
+                            <h1 class="contacts__title h1">
+                                Наша команда консультантів готова відповісти на будь-яке ваше запитання!
+                            </h1>
+                            <p class="contacts__text">
+                                Зв'яжіться з нами вже сьогодні, щоб розпочати свій шлях до чистої та вигідної сонячної
+                                енергії.
+                            </p>
+                            <div class="contacts__name">Greenline Energy</div>
+                            <ul class="contacts__list">
+                                <li class="contacts__item">
+                                    <svg>
+                                        <use href="img/icons/icons.svg#mail"></use>
+                                    </svg>
+                                    <a href="mailto:info@greenlineenergy.com" class="contacts__link">
+                                        info@greenlineenergy.com
+                                    </a>
+                                </li>
+                                <li class="contacts__item">
+                                    <svg>
+                                        <use href="img/icons/icons.svg#phone2"></use>
+                                    </svg>
+                                    <a href="tel:380000000000" class="contacts__link">
+                                        +380 00 000 00 00
+                                    </a>
+                                </li>
+                                <li class="contacts__item">
+                                    <svg>
+                                        <use href="img/icons/icons.svg#location"></use>
+                                    </svg>
+                                    Kyiv
+                                </li>
+                            </ul>
+                        </div>
+                        <form action="#" class="contacts__form form">
+                            <h2 class="form__title">Contact Form</h2>
+                            <p class="form__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <div class="form__block">
+                                <div class="form__input input input-100">
+                                    <div class="input__label">Им’я <span>*</span></div>
+                                    <input type="text" placeholder="Им’я" name="name">
+                                </div>
+                                <div class="form__input input input-50">
+                                    <div class="input__label">Email <span>*</span></div>
+                                    <input type="text" placeholder="example@gmail.com" name="email">
+                                </div>
+                                <div class="form__input input input-50">
+                                    <div class="input__label">Телефон <span>*</span></div>
+                                    <input type="text" placeholder="+380 (00) 000 00 00" name="phone">
+                                </div>
+                                <div class="form__input input input-100">
+                                    <div class="input__label">Коментар</div>
+                                    <textarea placeholder="Коментар (необов’язково)" name="comment"></textarea>
+                                </div>
+                            </div>
+                            <div class="form__checkbox checkbox">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                </p>
+                                <input type="checkbox" name="name" value="value">
+                            </div>
+                            <button class="form__submit btn-green" data-modal="thanks">
+                                Відправити
+                                <span>
+                                    <svg>
+                                        <use href="img/icons/icons.svg#arrow"></use>
+                                    </svg>
+                                </span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="footer">
+    <div class="footer__container container">
+        <div class="footer__body">
+            <a href="#" class="footer__logo">
+                <img src="img/logo.svg" alt="Logo">
+            </a>
+            <p class="footer__rights">
+                © 2023. GreenLine Energy
+            </p>
+            <div class="footer__dev">
+                Розробка сайту
+                <img src="img/odesseo_logo.svg" alt="Logo">
+            </div>
+        </div>
+    </div>
+</footer>
+    </div>
+
+    <div class="modal" id="form">
+    <div class="modal__wrapper">
+        <div class="modal__content">
+            <form action="#" class="modal__form form">
+                <h2 class="form__title">Contact Form</h2>
+                <p class="form__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.
+                </p>
+                <div class="form__block">
+                    <div class="form__input input input-100">
+                        <div class="input__label">Им’я <span>*</span></div>
+                        <input type="text" placeholder="Им’я" name="name">
+                    </div>
+                    <div class="form__input input input-50">
+                        <div class="input__label">Email <span>*</span></div>
+                        <input type="text" placeholder="example@gmail.com" name="email">
+                    </div>
+                    <div class="form__input input input-50">
+                        <div class="input__label">Телефон <span>*</span></div>
+                        <input type="text" placeholder="+380 (00) 000 00 00" name="phone">
+                    </div>
+                    <div class="form__input input input-100">
+                        <div class="input__label">Коментар</div>
+                        <textarea placeholder="Коментар (необов’язково)" name="comment"></textarea>
+                    </div>
+                </div>
+                <div class="form__checkbox checkbox">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <input type="checkbox" name="name" value="value">
+                </div>
+                <button class="form__submit btn-green" data-modal="thanks">
+                    Відправити
+                    <span>
+                        <svg>
+                            <use href="img/icons/icons.svg#arrow"></use>
+                        </svg>
+                    </span>
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="thanks">
+    <div class="modal__wrapper">
+        <div class="modal__content">
+            <div class="modal__thanks thanks">
+                <h2 class="thanks__title">Thank you!</h2>
+                <p class="thanks__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                </p>
+                <a href="/" class="thanks__btn btn-green">
+                    Back to homepage
+                    <span>
+                        <svg>
+                            <use href="img/icons/icons.svg#arrow"></use>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="js/app.min.js?_v=20240226113744"></script>
+</body>
+
+</html>

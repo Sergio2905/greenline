@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <title>Greenline</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css?_v=20240226113744">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20240226113744"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240226113744" />
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+    <div class="header__container container">
+        <div class="header__body">
+            <a href="#" class="header__logo">
+                <img src="img/logo.svg" alt="Logo">
+            </a>
+            <div class="header__menu menu" data-desk="phone, after">
+                <nav class="menu__body" data-mob="lang, append">
+                    <ul class="menu__list" data-mob="phone, after">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Про нас</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Послуги</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Калькулятор</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <a href="#" class="header__phone" data-desk="lang, after" data-move="phone, 480">
+                <svg>
+                    <use href="img/icons/icons.svg#phone"></use>
+                </svg>
+                +38 044 391 17 07
+            </a>            
+            <div class="header__lang lang" data-move="lang, 768">
+                <button type="button" class="lang__btn active">Укр</button>
+                <button type="button" class="lang__btn">Ру</button>
+            </div>
+            <button type="button" class="header__menu-icon">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+        <div class="page">
+
+            <div class="intro intro_reverse">
+                <div class="intro__container container">
+                    <div class="intro__body">
+                        <div class="intro__info">
+                            <h2 class="intro__title h2">
+                                Інвестиції в сонячну енергію: Надійне майбутнє для наших дітей
+                            </h2>
+                            <p class="intro__text">
+                                Кожна станція, яку ми з вами разом створюємо це не просто вигідна фінансова інвестиція.
+                                Це внесок у ваше майбутнє та майбутнє ваших дітей.
+                            </p>
+                            <button type="button" class="intro__btn btn-green" data-modal="form">
+                                Замовити консультацію
+                                <span>
+                                    <svg>
+                                        <use href="img/icons/icons.svg#arrow"></use>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="intro__image lazy">
+                            <picture>
+                                <source data-srcset="img/intro/image.webp" srcset="img/plug.png" type="image/webp">
+                                <img data-src="img/intro/image.jpg" src="img/plug.png" alt="Image">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service">
+                <div class="service__container container">
+                    <div class="service__body">
+                        <div class="service__pre-title">наші послуги</div>
+                        <h2 class="service__title h2">комплекC послуг для наших клієнтів</h2>
+                        <p class="service__text">
+                            Ми пропонуємо індивідуальний підхід до кожного проекту, забезпечуючи
+                            найкращі рішення та високий рівень якості.
+                        </p>
+                        <div class="service__item item-service">
+                            <div class="item-service__info">
+                                <div class="item-service__icon">
+                                    <img src="img/service/icon1.svg" alt="Icon">
+                                </div>
+                                <h3 class="item-service__title">Консалтинг</h3>
+                                <p class="item-service__text">
+                                    Наша команда експертів з сонячної енергетики готова надати вам професійну
+                                    консультацію та підтримку на всіх етапах інвестиційного процесу.
+                                </p>
+                            </div>
+                            <div class="item-service__image lazy">
+                                <picture>
+                                    <source data-srcset="img/service/image1.webp" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/service/image1.jpg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="service__item item-service">
+                            <div class="item-service__info">
+                                <div class="item-service__icon">
+                                    <img src="img/service/icon2.svg" alt="Icon">
+                                </div>
+                                <h3 class="item-service__title">Проектування</h3>
+                                <p class="item-service__text">
+                                    Наша команда інженерів враховує всі аспекти, починаючи від вибору оптимального
+                                    місцезнаходження для сонячних панелей і закінчуючи розробкою технічних схем та
+                                    плануванням всієї системи.
+                                </p>
+                            </div>
+                            <div class="item-service__image lazy">
+                                <picture>
+                                    <source data-srcset="img/service/image2.webp" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/service/image2.jpg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="service__item item-service">
+                            <div class="item-service__info">
+                                <div class="item-service__icon">
+                                    <img src="img/service/icon3.svg" alt="Icon">
+                                </div>
+                                <h3 class="item-service__title">Будівництво</h3>
+                                <p class="item-service__text">
+                                    Ми гарантуємо якість та надійність наших проектів, щоб забезпечити стабільні доходи
+                                    для наших інвесторів.
+                                </p>
+                            </div>
+                            <div class="item-service__image lazy">
+                                <picture>
+                                    <source data-srcset="img/service/image3.webp" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/service/image3.jpg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="service__item item-service">
+                            <div class="item-service__info">
+                                <div class="item-service__icon">
+                                    <img src="img/service/icon2.svg" alt="Icon">
+                                </div>
+                                <h3 class="item-service__title">Сервіс</h3>
+                                <p class="item-service__text">
+                                    Наші експерти забезпечують надійну установку та обслуговування сонячних панелей.
+                                </p>
+                            </div>
+                            <div class="item-service__image lazy">
+                                <picture>
+                                    <source data-srcset="img/service/image2.webp" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/service/image4.jpg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="service__item item-service">
+                            <div class="item-service__info">
+                                <div class="item-service__icon">
+                                    <img src="img/service/icon5.svg" alt="Icon">
+                                </div>
+                                <h3 class="item-service__title">Залучення кредиту</h3>
+                                <p class="item-service__text">
+                                    Ми допомагаємо клієнтам отримувати доступ до фінансових ресурсів, необхідних для
+                                    розвитку сонячних проектів.
+                                </p>
+                            </div>
+                            <div class="item-service__image lazy">
+                                <picture>
+                                    <source data-srcset="img/service/image5.webp" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/service/image5.jpg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="service__item item-service">
+                            <div class="item-service__info">
+                                <div class="item-service__icon">
+                                    <img src="img/service/icon6.svg" alt="Icon">
+                                </div>
+                                <h3 class="item-service__title">Отримання дозволів</h3>
+                                <p class="item-service__text">
+                                    Наша компанія надає повний спектр допомоги в оформленні всіх необхідних дозвільних
+                                    документів.
+                                </p>
+                            </div>
+                            <div class="item-service__image lazy">
+                                <picture>
+                                    <source data-srcset="img/service/image6.webp" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/service/image6.jpg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="service__item item-service">
+                            <div class="item-service__info">
+                                <div class="item-service__icon">
+                                    <img src="img/service/icon7.svg" alt="Icon">
+                                </div>
+                                <h3 class="item-service__title">Технічний аудит</h3>
+                                <p class="item-service__text">
+                                    Наші експерти проводять ретельний аналіз технічного стану сонячних електростанцій,
+                                    щоб забезпечити їх ефективну роботу та надійність.
+                                </p>
+                            </div>
+                            <div class="item-service__image lazy">
+                                <picture>
+                                    <source data-srcset="img/service/image7.webp" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/service/image7.jpg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="service__item item-service">
+                            <div class="item-service__info">
+                                <div class="item-service__icon">
+                                    <img src="img/service/icon8.svg" alt="Icon">
+                                </div>
+                                <h3 class="item-service__title">Комплектація</h3>
+                                <p class="item-service__text">
+                                    Kомплектація об'єкта всіма необхідними матеріалами та обладнанням.
+                                </p>
+                            </div>
+                            <div class="item-service__image lazy">
+                                <picture>
+                                    <source data-srcset="img/service/image8.webp" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/service/image8.jpg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cases">
+                <div class="cases__container container">
+                    <div class="cases__body">
+                        <div class="cases__pre-title">наші проекти</div>
+                        <h2 class="cases__title h2">
+                            Ми успішно реалізували 100+ Проєктів для наших клієнтів
+                        </h2>
+                        <p class="cases__text">
+                            Наші проекти сонячних панелей розвиваються на передових технологіях та допомагають нашим
+                            клієнтам отримувати стабільний прибуток
+                        </p>
+                        <div class="cases__grid">
+                            <div class="cases__card card-cases">
+                                <div class="card-cases__image lazy">
+                                    <picture>
+                                        <source data-srcset="img/cases/image1.webp" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/cases/image1.jpg" src="img/plug.png" alt="Image">
+                                    </picture>
+                                </div>
+                                <div class="card-cases__body">
+                                    <h3 class="card-cases__title">Будівництво наземної СЕС</h3>
+                                    <ul class="card-cases__list">
+                                        <li class="card-cases__item">
+                                            Потужність: <span>0,76 МВт</span>
+                                        </li>
+                                        <li class="card-cases__item">
+                                            Розміщення: <span>м. Калинівка, Вінницька обл.</span>
+                                        </li>
+                                        <li class="card-cases__item">
+                                            Побудовано: <span>2019 рік</span>
+                                        </li>
+                                    </ul>
+                                    <div class="card-cases__footer">
+                                        <a href="#" class="card-cases__link btn-simple">
+                                            Read Case
+                                            <span>
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#arrow"></use>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cases__card card-cases">
+                                <div class="card-cases__image lazy">
+                                    <picture>
+                                        <source data-srcset="img/cases/image2.webp" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/cases/image2.jpg" src="img/plug.png" alt="Image">
+                                    </picture>
+                                </div>
+                                <div class="card-cases__body">
+                                    <h3 class="card-cases__title">Будівництво наземної СЕС</h3>
+                                    <ul class="card-cases__list">
+                                        <li class="card-cases__item">
+                                            Потужність: <span>0,76 МВт</span>
+                                        </li>
+                                        <li class="card-cases__item">
+                                            Розміщення: <span>м. Калинівка, Вінницька обл.</span>
+                                        </li>
+                                        <li class="card-cases__item">
+                                            Побудовано: <span>2019 рік</span>
+                                        </li>
+                                    </ul>
+                                    <div class="card-cases__footer">
+                                        <a href="#" class="card-cases__link btn-simple">
+                                            Read Case
+                                            <span>
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#arrow"></use>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cases__card card-cases">
+                                <div class="card-cases__image lazy">
+                                    <picture>
+                                        <source data-srcset="img/cases/image3.webp" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/cases/image3.jpg" src="img/plug.png" alt="Image">
+                                    </picture>
+                                </div>
+                                <div class="card-cases__body">
+                                    <h3 class="card-cases__title">Будівництво наземної СЕС</h3>
+                                    <ul class="card-cases__list">
+                                        <li class="card-cases__item">
+                                            Потужність: <span>0,76 МВт</span>
+                                        </li>
+                                        <li class="card-cases__item">
+                                            Розміщення: <span>м. Калинівка, Вінницька обл.</span>
+                                        </li>
+                                        <li class="card-cases__item">
+                                            Побудовано: <span>2019 рік</span>
+                                        </li>
+                                    </ul>
+                                    <div class="card-cases__footer">
+                                        <a href="#" class="card-cases__link btn-simple">
+                                            Read Case
+                                            <span>
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#arrow"></use>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" type="button" class="cases__btn btn-green">
+                            All cases
+                            <span>
+                                <svg>
+                                    <use href="img/icons/icons.svg#arrow"></use>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="calc">
+                <div class="calc__container container">
+                    <div class="calc__body">
+                        <div class="calc__info">
+                            <h2 class="calc__title h2">Kалькулятор доходу СЕС</h2>
+                            <div class="calc__text">
+                                <p>
+                                    При розрахунку річної виручки застосований діючий у 2022 році тариф для наземної
+                                    промислової СЕС потужністю до 1 МВт.
+                                </p>
+                                <p>
+                                    Генерація розрахована з урахуванням розташування СЕС у центральному регіоні України.
+                                    Як середнє зважене значення. Крайні південні регіони України можуть давати генерацію
+                                    більше на 6-8%. Крайні північні на 8-10% менше.
+                                </p>
+                            </div>
+                            <button type="button" class="calc__btn btn-light" data-modal="form">
+                                Замовити консультацію
+                                <span>
+                                    <svg>
+                                        <use href="img/icons/icons.svg#arrow"></use>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="calc__form form-calc">
+                            <div class="form-calc__body">
+                                <ul class="form-calc__list">
+                                    <li class="form-calc__item">
+                                        Сума інвестиції, € <span>50 000</span>
+                                        <div class="form-calc__range range-single">
+                                            <input type="range" min="50000" max="500000" step="5000" value="50000">
+                                            <div class="range-single__slider">
+                                                <div class="range-single__thumb"></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="form-calc__item">
+                                        Потужність станції <span>74.63 кВт</span>
+                                    </li>
+                                    <li class="form-calc__item">
+                                        Обсяг річної генерації <span>88 805.97 кВт·год</span>
+                                    </li>
+                                    <li class="form-calc__item">
+                                        Термін окупності <span>близько 5 років</span>
+                                    </li>
+                                    <li class="form-calc__item">
+                                        Виручка з ПДВ <span>10 901.82 €/рік</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="footer">
+    <div class="footer__container container">
+        <div class="footer__body">
+            <a href="#" class="footer__logo">
+                <img src="img/logo.svg" alt="Logo">
+            </a>
+            <p class="footer__rights">
+                © 2023. GreenLine Energy
+            </p>
+            <div class="footer__dev">
+                Розробка сайту
+                <img src="img/odesseo_logo.svg" alt="Logo">
+            </div>
+        </div>
+    </div>
+</footer>
+    </div>
+
+    <div class="modal" id="form">
+    <div class="modal__wrapper">
+        <div class="modal__content">
+            <form action="#" class="modal__form form">
+                <h2 class="form__title">Contact Form</h2>
+                <p class="form__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.
+                </p>
+                <div class="form__block">
+                    <div class="form__input input input-100">
+                        <div class="input__label">Им’я <span>*</span></div>
+                        <input type="text" placeholder="Им’я" name="name">
+                    </div>
+                    <div class="form__input input input-50">
+                        <div class="input__label">Email <span>*</span></div>
+                        <input type="text" placeholder="example@gmail.com" name="email">
+                    </div>
+                    <div class="form__input input input-50">
+                        <div class="input__label">Телефон <span>*</span></div>
+                        <input type="text" placeholder="+380 (00) 000 00 00" name="phone">
+                    </div>
+                    <div class="form__input input input-100">
+                        <div class="input__label">Коментар</div>
+                        <textarea placeholder="Коментар (необов’язково)" name="comment"></textarea>
+                    </div>
+                </div>
+                <div class="form__checkbox checkbox">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <input type="checkbox" name="name" value="value">
+                </div>
+                <button class="form__submit btn-green" data-modal="thanks">
+                    Відправити
+                    <span>
+                        <svg>
+                            <use href="img/icons/icons.svg#arrow"></use>
+                        </svg>
+                    </span>
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="thanks">
+    <div class="modal__wrapper">
+        <div class="modal__content">
+            <div class="modal__thanks thanks">
+                <h2 class="thanks__title">Thank you!</h2>
+                <p class="thanks__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+                </p>
+                <a href="/" class="thanks__btn btn-green">
+                    Back to homepage
+                    <span>
+                        <svg>
+                            <use href="img/icons/icons.svg#arrow"></use>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="js/app.min.js?_v=20240226113744"></script>
+</body>
+
+</html>
