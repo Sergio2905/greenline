@@ -5,16 +5,16 @@
     <title>Greenline</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20240327151757">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240327151757" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css?_v=20240327151757"
+    <link rel="stylesheet" href="css/style.min.css?_v=20240328112259">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240328112259" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css?_v=20240328112259"
         integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20240327151757"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20240328112259"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js?_v=20231030201819"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
         </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js?_v=20240327151757"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js?_v=20240328112259"
         integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
@@ -262,26 +262,53 @@
                         <div class="calc__form form-calc">
                             <div class="form-calc__body">
                                 <ul class="form-calc__list">
-                                    <li class="form-calc__item">
-                                        Сума інвестиції, € <span>50 000</span>
+                                    <li class="form-calc__item" data-calc="summ">
+                                        <div class="form-calc__name">Сума інвестиції</div>
+                                        <div class="form-calc__value"><span>25,000</span> $</div>                                        
                                         <div class="form-calc__range range-single">
-                                            <input type="range" min="50000" max="500000" step="5000" value="50000">
+                                            <input type="range" min="25000" max="1000000" step="25000" value="25000">
                                             <div class="range-single__slider">
                                                 <div class="range-single__thumb"></div>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="form-calc__item">
-                                        Потужність станції <span>74.63 кВт</span>
+                                    <li class="form-calc__item" data-calc="power">
+                                        <div class="form-calc__name">Потужність станції</div> 
+                                        <div class="form-calc__value"><span>50</span> кВт</div>                                        
+                                        <div class="form-calc__range range-single">
+                                            <input type="range" min="50" max="2000" step="50" value="50">
+                                            <div class="range-single__slider">
+                                                <div class="range-single__thumb"></div>
+                                            </div>
+                                        </div>
                                     </li>
-                                    <li class="form-calc__item">
-                                        Обсяг річної генерації <span>88 805.97 кВт·год</span>
+                                    <li class="form-calc__item" data-calc="index">
+                                        <div class="form-calc__name">Ваша повна ціна за 1 квт год з ПДВ </div>
+                                        <div class="form-calc__value"><input type="text" class="number" value="0.22"> $</div>                                                                               
                                     </li>
-                                    <li class="form-calc__item">
-                                        Термін окупності <span>близько 5 років</span>
+                                    <li class="form-calc__item" data-calc="year-volume">
+                                        <div class="form-calc__name">Обсяг річної генерації</div>
+                                        <div class="form-calc__value"><span></span> кВт·год</div>                                         
                                     </li>
-                                    <li class="form-calc__item">
-                                        Виручка з ПДВ <span>10 901.82 €/рік</span>
+                                    <li class="form-calc__item" data-calc="month-volume">
+                                        <div class="form-calc__name">Середньомісячний обсяг</div>
+                                        <div class="form-calc__value"><span></span> кВт·год</div>                                         
+                                    </li>
+                                    <li class="form-calc__item" data-calc="term">
+                                        <div class="form-calc__name">Термін окупності</div>
+                                        <div class="form-calc__value"><span></span> років</div>                                         
+                                    </li>
+                                    <li class="form-calc__item" data-calc="year-saving">
+                                        <div class="form-calc__name">Річна економія з ПДВ</div>
+                                        <div class="form-calc__value"><span>10 901.82</span> $</div>                                         
+                                    </li>
+                                    <li class="form-calc__item" data-calc="month-saving">
+                                        <div class="form-calc__name">Середньомісячна економія з ПДВ</div>
+                                        <div class="form-calc__value"><span>10 901.82</span> $</div>                                         
+                                    </li>
+                                    <li class="form-calc__item" data-calc="square">
+                                        <div class="form-calc__name">Необхідна площа покрівлі</div>
+                                        <div class="form-calc__value"><span>6.8</span> м.кв.</div>                                         
                                     </li>
                                 </ul>
                             </div>
@@ -769,7 +796,7 @@
         </div>
     </div>
 </div>
-    <script src="js/app.min.js?_v=20240327151757"></script>
+    <script src="js/app.min.js?_v=20240328112259"></script>
 </body>
 
 </html>
